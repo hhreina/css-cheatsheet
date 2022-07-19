@@ -12,15 +12,87 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <header>
-           <h1>CSS Selectors Cheat Sheet</h1> 
-        </header>
         <main>
-            add some content here
+            <h1>Advanced CSS Selectors Cheat Sheet</h1>
 
+            <h3>Play <a href="https://flukeout.github.io/" target="_blank">CSS Diner</a>
+                to sharpen your selector skills! </h3>
+            <table class="#reference">
+                <thead>
+                  <tr>
+                   <th class="selector">Selector</th>
+                   <th class="example">Example</th>
+                   <th class="description">Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><!-- First row -->
+                    <td>Adjacent Sibling Combinator</td>
+                    <td><code>img + p</code></td>
+                    <td>Selects a paragraph immediately following an image only if both are children of the same parent element </td>
+                    <!-- <td>Table Cell</td> -->
+                  </tr>
+                  <tr><!-- Second row -->
+                    <td>Child Combinator</td>
+                    <td><code>ul.my-items > li</code></td>
+                    <td>Selects all list items that are direct children of the unordered list with the class "my-items" </td>
+                  </tr>
+                  <tr><!-- Third row -->
+                    <td>Pseudo Selector: First Child</td>
+                    <td><code>p:first-child</code></td>
+                    <td>Selects the first paragraph <em>in the paragraph's parent element</em></td>
+                  </tr>
+                  <tr><!-- 4th row -->
+                    <td>Pseudo Selector: Last Child</td>
+                    <td><code>p:last-child</code></td>
+                    <td>Selects the last paragraph <em>in the paragraph's parent element</em></td>
+                  </tr>
+                  <tr><!-- 5th row -->
+                    <td>Pseudo Selector: nth Child</td>
+                    <td><code>p:nth-child{3)</code></td>
+                    <td>Selects the third paragraph <em>in the paragraph's parent element</em></td>
+                  </tr>
+                  <tr><!-- 6th row -->
+                    <td>Pseudo Elements ::before  ::after</td>
+                    <td>
+                        <code>q::before {content: "«";} 
+                              q::after {content: "»";}
+                        </code>
+                    </td> 
+                    <td>Selects all quote elements and adds quote marks before and after them. 
+                        <em>Note that content added in this way is not part of the DOM.</em>
+                    </td>
+                  </tr>
+                  <tr><!-- 7th row -->
+                    <td>Pseudo Class :focus</td>
+                    <td><code>input:focus {background-color: lightcyan;}</code></td>
+                    <td>Can be used with any element, class, or id.  
+                        If the forrm's input is tapped, clicked, or tabbed to from keyboard, 
+                        the background changes color.</td>
+                  </tr>
+                  <tr><!-- 8th row -->
+                    <td>Pseudo Class :valid</td>
+                    <td><code>input:valid {border: green;}</code></td>
+                    <td>Used with forms.  If the forrm's input value is valid, it gets a green border.</td>
+                  </tr>
+                  <tr><!-- 9th row -->
+                    <td>Pseudo Class :invalid</td>
+                    <td><code>input:invalid {border: red;}</code></td>
+                    <td>Used with forms.  If the forrm's input value is invalid, it gets a red border.</td>
+                  </tr>
+                </tbody>
+              </table>
+            <br/><br/>
+            <div id="cssvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/CsfMmyn3Pa4" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
         </main>
         <footer>
-            add a footer here
+            Copyright 2022 by Heidi
         </footer>
         
         
